@@ -18,7 +18,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'cocstatus': 'coc#status'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'dracula',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''

@@ -14,6 +14,7 @@ Plug 'itchyny/lightline.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -37,13 +38,14 @@ Plug 'janko-m/vim-test'
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'wakatime/vim-wakatime'
 
 " git
 Plug 'tpope/vim-fugitive'
