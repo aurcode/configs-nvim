@@ -19,15 +19,16 @@ set tabstop=2 shiftwidth=2
 filetype plugin indent on
 
 set list
-set listchars=·,tab:▸\ ,trail:▫,extends:>,precedes:<,nbsp:+,eol:¬
+"set listchars=·,tab:▸\ ,trail:▫,extends:>,precedes:<,nbsp:+,eol:¬
 
 set relativenumber
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+"colorscheme gruvbox
+colorscheme dracula
+"let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
