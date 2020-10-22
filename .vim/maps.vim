@@ -20,6 +20,7 @@ cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
+cnoreabbrev gcc ! gcc % && ./a.out
 
 " plugs
 map <Leader>nt :NERDTreeFind<CR>
@@ -52,7 +53,9 @@ nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
-nnoremap <Leader>x :!node %<cr>
+nnoremap <Leader>xj :!node %<cr>
+nnoremap <Leader>xc :! gcc % && ./a.out<cr>
+nnoremap <Leader>xp :!python %<cr>
 
 set splitright
 function! OpenTerminal()
