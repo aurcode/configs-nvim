@@ -125,7 +125,7 @@ alias changeDNS='sudo ~/script/changeDNS.sh'
 alias ct='/bin/changeTheme'
 alias mi_ip='curl ifconfig.me'
 alias vel_red='~/script/speedtest-cli --simple'
-alias pg='ping 8.8.8.8 -c2 -i 0.5 && echo . && echo . && echo ~~~~~ Separador ~~~~~ && echo . && echo . && ping google.com -c2 -i 0.5'
+alias pg='ping 8.8.8.8 -c2 -i 0.5 && echo && echo && echo && echo && ping google.com -c2 -i 0.5'
 alias gs='git status'
 alias gh='git log --all --graph --decorate --oneline'
 

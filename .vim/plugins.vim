@@ -12,8 +12,8 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
+"Plug 'morhetz/gruvbox'
+"Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Tree
