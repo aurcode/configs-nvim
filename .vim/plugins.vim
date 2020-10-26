@@ -8,7 +8,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
 
 " status bar
-Plug 'maximbaz/lightline-ale'
+Plug 'maximbaz/lightline-ale' " make statusline awesome
 Plug 'itchyny/lightline.vim'
 
 " Themes

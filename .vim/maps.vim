@@ -38,6 +38,11 @@ nnoremap <Leader>dia  :<C-u>CocList diagnostics<cr>
 nnoremap <leader>kp :let @*=expand("%")<CR>
 
 " tabs navigation
+nnoremap tn :tabnew<Space>
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
 map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
