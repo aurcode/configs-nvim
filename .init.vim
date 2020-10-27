@@ -14,7 +14,7 @@ set encoding=utf-8
 set showmatch
 set signcolumn=yes
 set expandtab
-set tabstop=2 shiftwidth=2
+set tabstop=3 shiftwidth=3
 
 filetype plugin indent on
 
