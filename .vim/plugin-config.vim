@@ -122,6 +122,7 @@ function! FindTsServer(idx, value)
 endfunction
 
 let $FZF_DEFAULT_OPTS='--layout=reverse'
+let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g "!{.git,node_modules}/*"'
 let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 function! FloatingFZF()
   let buf = nvim_create_buf(v:false, v:true)
