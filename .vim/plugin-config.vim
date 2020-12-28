@@ -128,7 +128,7 @@ function! FloatingFZF()
   let buf = nvim_create_buf(v:false, v:true)
   call setbufvar(buf, '&signcolumn', 'no')
   let height = float2nr((&lines - 3) / 2)
-  let width = float2nr(&columns - (&columns * 2 / 10))
+  let width = float2nr(&columns - (&columns * 2 / 20))
   let col = float2nr((&columns - width) / 2)
   let row = float2nr((&lines - height) / 2)
   let opts = {

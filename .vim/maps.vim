@@ -58,9 +58,18 @@ nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 
-nnoremap <Leader>xj :!node %<cr>
-nnoremap <Leader>xc :! gcc % && ./a.out<cr>
-nnoremap <Leader>xp :!python %<cr>
+autocmd BufNewFile,BufRead *.js nnoremap <Leader>x :w \| !node %<cr>
+autocmd BufNewFile,BufRead *.js nnoremap <Leader>X :w \| !node %
+autocmd BufNewFile,BufRead *.ts nnoremap <Leader>x :w \| !deno run %<cr>
+autocmd BufNewFile,BufRead *.py nnoremap <Leader>x :w \| !python %<cr>
+autocmd BufNewFile,BufRead *.c nnoremap <Leader>x :w \| !gcc % && ./a.out<cr>
+
+autocmd BufNewFile,BufRead *.ts nnoremap <Leader>c :w \| !tsc %<cr>
+autocmd BufNewFile,BufRead *.c nnoremap <Leader>c :w \| !gcc %<cr>
+
+autocmd BufNewFile,BufRead *.js nnoremap <Leader>w :w \| !eslint % --fix<CR>
+autocmd BufNewFile,BufRead *.ts nnoremap <Leader>w :w \| !eslint % --fix<CR>
+autocmd BufNewFile,BufRead *.jsx nnoremap <Leader>w :w \| !eslint % --fix<CR>
 
 set splitright
 function! OpenTerminal()
