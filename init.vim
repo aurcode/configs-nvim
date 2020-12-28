@@ -1,3 +1,7 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.config/nvim/vimrc
+
 set number
 set mouse=a
 set numberwidth=1
@@ -8,17 +12,21 @@ set ruler
 set cursorline
 set encoding=utf-8
 set showmatch
-set sw=2
-set relativenumber
-so ~/.vim/plugins.vim
-so ~/.vim/plugin-config.vim
-so ~/.vim/maps.vim
+set signcolumn=yes
+set expandtab
+set tabstop=3 shiftwidth=3
 
-"colorscheme gruvbox
+filetype plugin indent on
+
+set list
+" set listchars=·,tab:▸\ ,trail:▫,extends:>,precedes:<,nbsp:+,eol:¬
+
+set relativenumber
+so ~/.config/nvim/plugins.vim
+so ~/.config/nvim/plugin-config.vim
+so ~/.config/nvim/maps.vim
+
 colorscheme dracula
-"let g:gruvbox_contrast_dark = "hard"
-let g:deoplete#enable_at_startup = 1
-let g:jsx_ext_required = 0
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
